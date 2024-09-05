@@ -1,6 +1,6 @@
 resource "aws_serverlessapplicationrepository_cloudformation_stack" "this" {
   application_id   = local.application_id
-  capabilities     = ["CAPABILITY_NAMED_IAM"]
+  capabilities     = ["CAPABILITY_NAMED_IAM","CAPABILITY_RESOURCE_POLICY"]
   name             = var.name
   semantic_version = var.semantic_version
   tags             = var.tags
